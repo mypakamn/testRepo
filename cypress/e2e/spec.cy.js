@@ -11,7 +11,7 @@ describe('Fixture file Test', function () {
   it('Test Case1', function (){
      // launch URL
      cy.visit("https://defensivehive-bof-stage.igeargeek.dev/auth/login")
-     cy.get('.text-sky').should('contain' , 'DEFENSIVE HIVE')
+     cy.get('.text-sky').should('contain' , 'DEFENSIVE HIVE').wait(2000)
      //ดึง variable มาใช้งานโดยใช้ this.regdata.(ตัวแปร)
     //  cy.LoginSuccess("admin@gmail.com" , "1234").wait(1000)
     // var i = "cy.contains('อีเมลหรือรหัสผ่านไม่ถูกต้อง')"
